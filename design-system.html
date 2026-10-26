@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Simple Design System — Case Study · Youssef Amr</title>
+<meta name="description" content="A simple design system — one small set of color, type and shape rules so every screen looks like it belongs to the same product. Case study by Youssef Amr.">
+<link rel="icon" href="assets/avatar.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@300;600&family=Figtree:ital,wght@0,400;0,600;1,400&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- NAV -->
+<header id="top" class="site-header container">
+  <div class="nav-bar glass">
+    <a href="index.html" class="brand">
+      <img src="assets/avatar.png" alt="" class="avatar avatar--sm" width="40" height="40">
+      <span>Youssef Amr</span>
+    </a>
+    <nav aria-label="Primary" class="nav-links">
+      <a href="index.html#work">Work</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact" class="nav-cta">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="container">
+
+  <!-- INTRO -->
+  <section aria-labelledby="case-h" class="hero card glass">
+    <a href="index.html#work" class="back-link">← Back to work</a>
+    <div class="stack gap-20">
+      <span class="caption caption--brand">Case study · Design system</span>
+      <h1 id="case-h">A Simple Design System</h1>
+      <p class="lead">One small set of color, type and shape rules.</p>
+      <p class="muted">Most design inconsistency comes from small, unrecorded decisions — a slightly different green here, a new corner radius there. This system records those decisions once, so designers and developers reuse them instead of re-deciding, and every screen looks like it belongs to the same product.</p>
+    </div>
+    <div class="case-meta small">
+      <div><span class="caption">Role</span><span>UI/UX Designer</span></div>
+      <div><span class="caption">Tool</span><span>Figma</span></div>
+      <div><span class="caption">Covers</span><span>Color, type, radius, stroke</span></div>
+    </div>
+  </section>
+
+  <!-- SLIDES -->
+  <section aria-label="Case study" class="slides">
+    <figure class="slide card glass">
+      <img src="assets/projects/design-system/1.webp" alt="Cover: 'A simple design system' — one small set of color, type and shape rules. Role: UI/UX Designer; tool: Figma; covers color, type, radius and stroke." width="1920" height="1042">
+      <figcaption class="caption">Cover</figcaption>
+    </figure>
+    <figure class="slide card glass">
+      <img src="assets/projects/design-system/2.webp" alt="Why a system, and why a small one: it records small decisions once. Three pillars — Color (eight hue ramps mapped to meaning), Typography (six headings, three body sizes, two small styles) and Shape (seven radii, four stroke weights)." width="1920" height="891" loading="lazy">
+      <figcaption class="caption">Why a small system</figcaption>
+    </figure>
+    <figure class="slide card glass">
+      <img src="assets/projects/design-system/3.webp" alt="Color ramps: red, orange, yellow, green, blue, purple, pink and greyscale, each from step 10 to 100, with light or dark label pairs showing which text passes contrast." width="1920" height="1684" loading="lazy">
+      <figcaption class="caption">Color ramps</figcaption>
+    </figure>
+    <figure class="slide card glass">
+      <img src="assets/projects/design-system/4.webp" alt="Semantic tokens: surface and fill colors and text colors named by purpose — neutral, neutral inverse, brand, success, warning, error and info — with primary, secondary, tertiary and disabled levels." width="1920" height="1614" loading="lazy">
+      <figcaption class="caption">Semantic tokens</figcaption>
+    </figure>
+    <figure class="slide card glass">
+      <img src="assets/projects/design-system/5.webp" alt="Type scale: serif headings H1 56px to H6 18px, and sans body large, regular and small, caption and footnote, each with base, strong and slant variants." width="1920" height="2050" loading="lazy">
+      <figcaption class="caption">Typography</figcaption>
+    </figure>
+    <figure class="slide card glass">
+      <img src="assets/projects/design-system/6.webp" alt="Shape: seven corner radii from XXS 2px to full, and four stroke weights from 1px to 4px." width="1920" height="1078" loading="lazy">
+      <figcaption class="caption">Radius &amp; stroke</figcaption>
+    </figure>
+    <figure class="slide card glass">
+      <img src="assets/projects/design-system/7.webp" alt="Rules the system follows: use tokens, not raw colors; name by purpose; pair every fill with its text color; pick sizes from the scale." width="1920" height="758" loading="lazy">
+      <figcaption class="caption">Rules</figcaption>
+    </figure>
+  </section>
+
+  <section aria-label="Next" class="card contact-card glass pad-40">
+    <h2>Like what you see?</h2>
+    <div class="row gap-12">
+      <a href="index.html#contact" class="btn btn--primary">Get in touch</a>
+      <a href="nama.html" class="btn btn--glass glass">Next: Nama →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer container">
+  <div class="footer-inner">
+    <span>© <span id="year">2026</span> Youssef Amr — designed in Figma, built in code</span>
+  </div>
+</footer>
+
+<!-- Full-screen slide viewer (wired up in js/main.js) -->
+<dialog id="lightbox" class="lightbox" aria-label="Slide viewer">
+  <div class="lightbox-stage">
+    <img class="lightbox-img" src="" alt="">
+  </div>
+  <button type="button" class="lb-btn lb-close glass" aria-label="Close">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <button type="button" class="lb-btn lb-prev glass" aria-label="Previous slide">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+  </button>
+  <button type="button" class="lb-btn lb-next glass" aria-label="Next slide">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+  </button>
+  <div class="lb-bar glass">
+    <span class="caption lb-caption"></span>
+    <span class="lb-counter small" aria-live="polite"></span>
+  </div>
+</dialog>
+
+<a href="#top" class="to-top glass" aria-label="Back to top">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>

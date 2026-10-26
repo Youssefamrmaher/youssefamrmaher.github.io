@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Youssef Amr — Design Engineer</title>
+<meta name="description" content="Youssef Amr — UI/UX designer and design engineer. I design interfaces and build them in code.">
+<link rel="icon" href="assets/avatar.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@300;600&family=Figtree:ital,wght@0,400;0,600;1,400&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- NAV -->
+<header id="top" class="site-header container">
+  <div class="nav-bar glass">
+    <a href="#top" class="brand">
+      <img src="assets/avatar.png" alt="" class="avatar avatar--sm" width="40" height="40">
+      <span>Youssef Amr</span>
+    </a>
+    <nav aria-label="Primary" class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="container">
+
+  <!-- 1 · HERO -->
+  <section aria-label="Intro" class="hero card glass">
+    <div class="stack gap-20">
+      <span class="caption caption--brand">Design Engineer</span>
+      <h1>I design interfaces and build them in code.</h1>
+      <p class="lead muted">UI/UX designer with a Business Information Systems background — from research and Figma to production front-end.</p>
+    </div>
+    <div class="stack gap-16">
+      <div class="row gap-12">
+        <a href="#contact" class="btn btn--primary">Get in touch</a>
+        <a href="#work" class="btn btn--glass glass">See work</a>
+      </div>
+      <div class="row small muted" style="gap: 8px">
+        <span class="chip">✓ Open to work</span>
+        <span class="chip">Cairo · GMT+3</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 · WORK -->
+  <section id="work" aria-labelledby="work-h" class="stack gap-16">
+    <div class="section-head">
+      <h2 id="work-h">Work</h2>
+      <div role="tablist" aria-label="Work type" class="tablist glass">
+        <button type="button" role="tab" id="tab-work" aria-controls="panel-work" aria-selected="true" class="tab">Selected work</button>
+        <button type="button" role="tab" id="tab-play" aria-controls="panel-play" aria-selected="false" tabindex="-1" class="tab">Playground</button>
+      </div>
+    </div>
+
+    <div role="tabpanel" id="panel-work" aria-labelledby="tab-work" class="tabpanel">
+      <article aria-live="polite" class="feature card glass">
+        <div class="feature-media" data-feature-media></div>
+        <div class="feature-body">
+          <div class="stack gap-4">
+            <span class="caption caption--brand" data-feature-tag></span>
+            <h3 data-feature-name></h3>
+            <p class="small muted" data-feature-summary></p>
+          </div>
+          <a href="#work" class="link-strong" data-feature-link>Case study →</a>
+        </div>
+      </article>
+      <div class="thumbs" data-thumbs></div>
+    </div>
+
+    <div role="tabpanel" id="panel-play" aria-labelledby="tab-play" class="tabpanel" hidden>
+      <!-- The whole card opens the viewer: the name is the real button, stretched over the card in CSS -->
+      <article aria-live="polite" class="feature feature--play feature--clickable card glass">
+        <div class="feature-media" data-feature-media></div>
+        <div class="feature-body">
+          <div class="stack gap-4">
+            <span class="caption caption--brand" data-feature-tag></span>
+            <h3><button type="button" class="card-open" data-feature-name data-feature-open></button></h3>
+            <p class="small muted" data-feature-summary></p>
+          </div>
+        </div>
+      </article>
+      <div class="thumbs" data-thumbs></div>
+    </div>
+  </section>
+
+  <!-- 3 · ABOUT -->
+  <section id="about" aria-labelledby="about-h" class="bento">
+    <div class="span-6 card glass pad-32 stack gap-16">
+      <h2 id="about-h">About</h2>
+      <p class="lead">Creative and detail-oriented UI/UX Designer with a strong background in user-centered design, prototyping, and digital product development. Certified by Google in UX Design and experienced in delivering intuitive, responsive interfaces for web and mobile applications. Also supports ERP system implementations, offering a multidisciplinary perspective on business systems and user experience.</p>
+      <p class="muted">[A personal line — interests, side projects.]</p>
+    </div>
+
+    <div class="span-6 card glass stack gap-4" style="padding: 24px 32px">
+      <span class="caption" style="padding-bottom: 8px">Experience</span>
+      <div class="job"><span style="font-weight: 600">Freelance UI/UX Designer</span><span class="job-years">[20XX — Now]</span></div>
+      <div class="job"><span style="font-weight: 600">Product Tester · Geomakani</span><span class="job-years">[20XX — 20XX]</span></div>
+      <div class="job"><span style="font-weight: 600">[Role] · [Company]</span><span class="job-years">[20XX — 20XX]</span></div>
+      <a href="assets/Youssef_Amr_CV.pdf" class="link-strong" style="margin-top: 8px" download>Résumé (PDF) ↓</a>
+    </div>
+
+    <div class="span-3 card glass pad-24 stack gap-12 between">
+      <span class="caption">Certification</span>
+      <span class="tile-title">Google UX Design Professional Certificate</span>
+    </div>
+    <div class="span-3 card glass pad-24 stack gap-12 between">
+      <span class="caption">Education</span>
+      <span class="tile-title">Business Information Systems</span>
+    </div>
+  </section>
+
+  <!-- 4 · CONTACT -->
+  <section id="contact" aria-labelledby="contact-h" class="bento">
+    <div class="span-6 card contact-card glass pad-40">
+      <img src="assets/avatar.png" alt="" class="avatar avatar--lg" width="72" height="72">
+      <div class="stack gap-12">
+        <h2 id="contact-h">Let’s build something.</h2>
+        <p class="lead muted">[What you’re open to: full-time, freelance, collaborations.]</p>
+      </div>
+      <div class="row gap-12">
+        <a href="mailto:youssefamrmaher@gmail.com?subject=Hello%20from%20your%20portfolio" class="link-strong email-link" style="min-height: 48px">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+          youssefamrmaher@gmail.com
+        </a>
+      </div>
+    </div>
+    <a href="https://www.linkedin.com/in/youssef-amr-26649a264/" target="_blank" rel="noopener noreferrer" class="span-2 card glass pad-24 link-tile"><span class="caption">Social</span>LinkedIn ↗</a>
+    <a href="https://www.behance.net/youssefamr54" target="_blank" rel="noopener noreferrer" class="span-2 card glass pad-24 link-tile"><span class="caption">Portfolio</span>Behance ↗</a>
+    <a href="assets/Youssef_Amr_CV.pdf" class="span-2 card glass pad-24 link-tile" download><span class="caption">Files</span>Résumé ↓</a>
+  </section>
+
+</main>
+
+<footer class="site-footer container">
+  <div class="footer-inner">
+    <span>© <span id="year">2026</span> Youssef Amr — designed in Figma, built in code</span>
+  </div>
+</footer>
+
+<!-- Full-screen viewer for Playground projects (wired up in js/main.js) -->
+<dialog id="lightbox" class="lightbox" aria-label="Project viewer">
+  <div class="lightbox-stage">
+    <img class="lightbox-img" src="" alt="">
+  </div>
+  <button type="button" class="lb-btn lb-close glass" aria-label="Close">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <button type="button" class="lb-btn lb-prev glass" aria-label="Previous image">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+  </button>
+  <button type="button" class="lb-btn lb-next glass" aria-label="Next image">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+  </button>
+  <div class="lb-bar glass">
+    <span class="caption lb-caption"></span>
+    <span class="lb-counter small" aria-live="polite"></span>
+  </div>
+</dialog>
+
+<a href="#top" class="to-top glass" aria-label="Back to top">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
